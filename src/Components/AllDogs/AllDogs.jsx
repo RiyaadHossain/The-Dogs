@@ -9,7 +9,7 @@ const AllDogs = () => {
         .then(data => setDogs(data))
     }, [])
     return (
-        <div>
+        <div className='row g-4 container m-auto'>
             {dogs.map(dog => <Dog dog={dog}></Dog>)}
         </div>
     );
